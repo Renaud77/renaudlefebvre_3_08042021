@@ -5,6 +5,10 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";
+@import "./utils/index";
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Shrikhand&display=swap');
+
 
 // ------------- A AJOUTER AU BESOIN DANS CET ORDRE -------------
 
@@ -32,3 +36,4 @@
 // @import "./vendors/vendors3";
 
 // ------------- FIN DES IMPORTS -------------
+
