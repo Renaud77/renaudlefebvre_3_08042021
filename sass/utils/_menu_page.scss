@@ -1,0 +1,56 @@
+body{
+    font-family: $text-font;
+}
+.header_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem;
+    &_link{
+        padding: 1rem 1rem 1rem 1rem;
+        text-decoration: none;
+        color: black;
+        position: absolute;
+        left: 0;
+        top: 3px;
+    }
+    &_block_text{
+        padding-top: 0.5rem;
+    }
+    &_text{
+        font-family: $title-font;
+        font-size: large;
+    }
+
+}
+.container_dishe{
+    background-color: #eaeaea;
+    padding-top: 1rem;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: absolute;
+    width: 100%;
+    top: 221px;
+}
+.menu_title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &_text{
+        font-family: $title-font;
+        font-size: 22px;
+    }
+}
+.menu_card{
+    width: 95%;
+    margin: auto;
+    border-radius: 12px;
+    background-color: white;
+    &_content{
+        padding: 0.5rem;
+    }
+    &_description{
+        display: flex;
+        justify-content: space-between;
+    }
+}
