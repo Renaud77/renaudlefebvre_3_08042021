@@ -50,7 +50,7 @@
         border-radius: 2.5rem;
         align-items: center;
         padding: 0 0.7rem;
-        background-image: linear-gradient(200deg, $secondary-color, $primary-color);
+        background-image: linear-gradient(173deg, $secondary-color, $primary-color);
         text-decoration: none;
         color: white;
     }    
@@ -186,6 +186,12 @@
     text-decoration: none;
     color: white;
     padding-bottom: 0.5rem;
+}
+.fa-utensils{
+    margin-right: 1rem;
+}
+.fa-hands-helping{
+    margin-right: 0.6rem;
 }
 @media screen and (min-width: 650px){
     .container{

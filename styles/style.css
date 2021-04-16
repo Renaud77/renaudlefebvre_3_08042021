@@ -52,7 +52,7 @@
   border-radius: 2.5rem;
   align-items: center;
   padding: 0 0.7rem;
-  background-image: linear-gradient(200deg, #ff79da, #9356dc);
+  background-image: linear-gradient(173deg, #ff79da, #9356dc);
   text-decoration: none;
   color: white;
 }
@@ -201,6 +201,14 @@
   padding-bottom: 0.5rem;
 }
 
+.fa-utensils {
+  margin-right: 1rem;
+}
+
+.fa-hands-helping {
+  margin-right: 0.6rem;
+}
+
 @media screen and (min-width: 650px) {
   .container {
     max-width: 1440px;
@@ -295,7 +303,8 @@ body {
 
 .menu_title {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 1rem;
   align-items: center;
 }
 .menu_title_text {
@@ -303,18 +312,58 @@ body {
   font-size: 22px;
 }
 
+.menu_dishe_h1 {
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+
 .menu_card {
   width: 95%;
   margin: auto;
   border-radius: 12px;
   background-color: white;
+  margin-bottom: 0.8rem;
 }
 .menu_card_content {
-  padding: 0.5rem;
+  padding: 0.8rem;
 }
 .menu_card_description {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+
+.menu_card_content_h2 {
+  font-weight: 600;
+}
+
+.menu_card_description_text {
+  font-weight: 300;
+  font-size: small;
+}
+
+.menu_card_description_price {
+  font-weight: 600;
+}
+
+.btn_commander {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem;
+}
+
+.btn_commander_links {
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 2.5rem;
+  align-items: center;
+  padding: 0 0.7rem;
+  background-image: linear-gradient(173deg, #ff79da, #9356dc);
+  text-decoration: none;
+  color: white;
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

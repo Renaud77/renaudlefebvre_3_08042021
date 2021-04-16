@@ -34,23 +34,45 @@ body{
 }
 .menu_title{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 1rem;
     align-items: center;
     &_text{
         font-family: $title-font;
         font-size: 22px;
     }
 }
+.menu_dishe_h1{
+   padding-left: 1rem;
+   margin-bottom: 0.5rem;
+   font-weight: 300;
+}
 .menu_card{
-    width: 95%;
-    margin: auto;
-    border-radius: 12px;
-    background-color: white;
+    @include menu-card;
     &_content{
-        padding: 0.5rem;
+        padding: 0.8rem;
     }
     &_description{
         display: flex;
+        align-items: center;
         justify-content: space-between;
     }
+}
+.menu_card_content_h2{
+    font-weight: 600;
+}
+.menu_card_description_text{
+    font-weight: 300;
+    font-size: small;
+}
+.menu_card_description_price{
+    font-weight: 600;
+}
+.btn_commander{
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem
+}
+.btn_commander_links{
+    @include btn;
 }
