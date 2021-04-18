@@ -3,76 +3,106 @@ body{
 }
 .header_menu{
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 0.4rem;
+    height: 5rem;
+    background-color:white;
     &_link{
-        padding: 1rem 1rem 1rem 1rem;
-        text-decoration: none;
-        color: black;
-        position: absolute;
-        left: 0;
-        top: 3px;
+        width: 10%;
+        text-align: center;
     }
     &_block_text{
-        padding-top: 0.5rem;
-    }
-    &_text{
+        width: 90%;
+        margin-right: 10%;
+        text-align: center;
         font-family: $title-font;
-        font-size: large;
+        font-size: 2rem;
     }
-
 }
-.container_dishe{
-    background-color: #eaeaea;
-    padding-top: 1rem;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    position: absolute;
+.menu_img{
+    height: 270px;
     width: 100%;
-    top: 221px;
+    object-fit: cover;
 }
-.menu_title{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 1rem;
-    align-items: center;
-    &_text{
+.container_menu{
+    background-color: #eaeaea;  
+}
+.container_menu_presentation{
+    position: relative;
+    top: -2rem;
+    background-color: #eaeaea;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    &_title{
+        padding: 1rem 1rem;
+        display: flex;
+        justify-content: space-between;
         font-family: $title-font;
-        font-size: 22px;
+        font-size: 1.5rem;
     }
 }
-.menu_dishe_h1{
-   padding-left: 1rem;
-   margin-bottom: 0.5rem;
-   font-weight: 300;
-}
-.menu_card{
+.presentation_dishe_card{
     @include menu-card;
-    &_content{
-        padding: 0.8rem;
+    &_content_h2{
+        font-weight: 600;
+        margin-bottom: 0.2rem;
     }
     &_description{
         display: flex;
-        align-items: center;
         justify-content: space-between;
     }
+    &_description_text{
+      font-weight: 300;  
+    }
+    &_description_price{
+        font-weight: 600;
+    }
 }
-.menu_card_content_h2{
-    font-weight: 600;
+.presentation_dishe_bloc{
+    margin: 1rem 0 0.6rem 1rem
+    ;
 }
-.menu_card_description_text{
-    font-weight: 300;
-    font-size: small;
+hr{
+    height: 3px;
+    width: 13%;
+    max-width: 40px;
+    min-width: 30px;
+    background-color: $third-color;
+    border: none;
+    margin-top: 0.1rem;
 }
-.menu_card_description_price{
-    font-weight: 600;
-}
+
 .btn_commander{
     display: flex;
     justify-content: center;
-    margin: 2.5rem
+    padding: 0 2rem 2rem;
+    background-color: #eaeaea
+
 }
 .btn_commander_links{
     @include btn;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .presentation_dishe{
+        width: 60%;
+        margin: auto;
+    }
+    .container_menu_presentation_title{
+        width: 50%;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1000px){
+    .container_menu_presentation_title{
+        width: 40%;
+        margin: auto;
+    }
+    .container_menu_presentation_dishe{
+        display: flex;
+        justify-content: space-between;
+    }
+    .presentation_dishe{
+        width: 30%;
+    }
+
+}
+
