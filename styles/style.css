@@ -160,7 +160,10 @@ body {
   height: 30%;
   padding-left: 1rem;
   padding-bottom: 1rem;
-  padding: 1rem 0 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .restaurants_card--description .restaurants_card--h3 {
   font-weight: 700;
