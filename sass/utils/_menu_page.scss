@@ -57,6 +57,45 @@ body{
         font-weight: 600;
     }
 }
+.presentation_dish_card_checkbox{
+    background-color: #99e2d0;
+    position: absolute;
+    top: 0;
+    padding: 0 2rem;
+    right: -150px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; 
+}
+.presentation_dish_card_checkbox_icon{
+    color: white;
+}
+.presentation_dishe_card:hover{
+    padding-right: 100px;
+    transition: 1s;
+}
+.presentation_dishe_card:hover .presentation_dish_card_checkbox{
+    right: 0;
+    transition: 1s;
+}
+.presentation_dishe_card:hover .presentation_dish_card_checkbox_icon{
+
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    transition: transform 1s; 
+    -webkit-transform: 1s;
+    color: white;
+}
 .presentation_dishe_bloc{
     margin: 1rem 0 0.6rem 1rem
     ;
