@@ -2,11 +2,10 @@
 
 // ------------- UTILS -------------
 @import "./utils/variables";
-@import "./utils/functions";
 @import "./utils/mixins";
-@import "./utils/extensions";
 @import "./utils/index";
 @import "./utils/menu_page";
+@import "./utils/keyframe";
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Shrikhand&display=swap');
 

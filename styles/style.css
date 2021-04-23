@@ -345,6 +345,7 @@ body {
   padding: 0.8rem;
   box-shadow: 0 1px 10px -3px #7e7e7e;
   overflow: hidden;
+  animation: slide_card 2s cubic-bezier(0.57, 1.04, 1, 1) backwards;
 }
 @media screen and (min-width: 1000px) {
   .presentation_dishe_card {
@@ -469,6 +470,24 @@ hr {
 
   .presentation_dishe {
     width: 30%;
+  }
+}
+@keyframes slide_card {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  50% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 
