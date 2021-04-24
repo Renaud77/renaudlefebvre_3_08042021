@@ -9,10 +9,24 @@
     padding: 0.8rem;
     box-shadow: 0 1px 10px -3px #7e7e7e;
     overflow: hidden;
-    animation: slide_card 2s linear backwards;
+    animation: slide_card 1s linear backwards;
+    transition: 1s;
     @media screen and (min-width: 1000px){
         min-height: 90px;
     }
+}
+@mixin heart-main {
+
+        width: 1.5rem;
+        height: 1.5rem;
+        overflow: visible;
+        fill-opacity: 0;
+        stroke: black;
+        stroke-width: 15px;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        transition: 1s;
+        cursor: pointer;
 }
 @mixin btn {
     height: 2.5rem;

@@ -55,6 +55,14 @@ body{
         margin-bottom: 2rem;
     }    
 }
+.heart-main{
+    @include heart-main
+}
+.heart-main:hover{
+    fill-opacity: 1;
+    animation: fade-animation linear 1.5s;
+}
+
 .fonctionnement{
     margin-bottom: 3rem;
 }
