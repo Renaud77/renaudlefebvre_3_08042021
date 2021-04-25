@@ -19,23 +19,15 @@
     
 }
 
-@keyframes fade-animation {
+@keyframes heart-animation {
   50% {
-    fill: $primary-color;
     transform: scale(1.1);
-    opacity: 1;
   }
-  80% {
-    fill: $primary-color;
+  70% {
     transform: scale(1.2);
-    opacity: 1;
   }
-  95% {
-    fill:$primary-color;
+  100% {
+    
     transform: scale(1.3);
-  }
-  100%{
-    opacity: 0;
-
   }
 }
