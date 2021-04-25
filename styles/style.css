@@ -1,3 +1,5 @@
+/* variable pour les couleurs */
+/* variable pour les fonts */
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Shrikhand&display=swap");
 body {
@@ -7,7 +9,9 @@ body {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
+/* partit css du Loader */
 .container_loader {
+  max-width: 1440px;
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -48,6 +52,7 @@ body {
   animation: rotation 600ms ease-in-out infinite;
 }
 
+/* partit header */
 .header_block_enseigne {
   display: flex;
   justify-content: center;
@@ -116,6 +121,7 @@ body {
   margin-bottom: 2rem;
 }
 
+/* partit main */
 .heart-main {
   width: 1.5rem;
   height: 1.5rem;
@@ -306,6 +312,7 @@ body {
   margin-right: 0.6rem;
 }
 
+/* media queries pour les tablettes  */
 @media screen and (min-width: 650px) {
   .container {
     max-width: 1440px;
@@ -355,6 +362,7 @@ body {
     background-color: white;
   }
 }
+/* media queries pour les ecrans Desktop */
 @media screen and (min-width: 650px) and (max-width: 1024px) {
   .fonctionnement {
     display: flex;
@@ -576,6 +584,7 @@ hr {
     width: 30%;
   }
 }
+/* annimation pour les cartes du menu */
 @keyframes slide_card {
   0% {
     opacity: 0;
@@ -594,6 +603,7 @@ hr {
     opacity: 1;
   }
 }
+/* animation pour le coeur */
 @keyframes heart-animation {
   50% {
     transform: scale(1.1);
@@ -605,6 +615,7 @@ hr {
     transform: scale(1.3);
   }
 }
+/* animations pour le loader */
 @keyframes loader {
   0% {
     letter-spacing: 1em;

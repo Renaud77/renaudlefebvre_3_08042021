@@ -1,4 +1,7 @@
 // ------------- LES KEYFRAMES ICI -------------
+
+/* annimation pour les cartes du menu */
+
 @keyframes slide_card {
   0% {
       opacity: 0;
@@ -18,6 +21,9 @@
     }
 }
 
+
+/* animation pour le coeur */
+
 @keyframes heart-animation {
   50% {
     transform: scale(1.1);
@@ -30,6 +36,10 @@
     transform: scale(1.3);
   }
 }
+
+
+/* animations pour le loader */
+
 
  @keyframes loader{
   0% {

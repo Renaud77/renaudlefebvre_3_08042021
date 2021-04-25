@@ -1,6 +1,7 @@
 body{
     font-family: $text-font;
 }
+
 .header_menu{
     display: flex;
     align-items: center;
@@ -18,14 +19,17 @@ body{
         font-size: 2rem;
     }
 }
+
 .menu_img{
     height: 270px;
     width: 100%;
     object-fit: cover;
 }
+
 .container_menu{
     background-color: #eaeaea;  
 }
+
 .container_menu_presentation{
     top: -2rem;
     background-color: #eaeaea;
@@ -39,9 +43,11 @@ body{
         font-size: 1.5rem;
     }
 }
+
 .presentation_dishe_bloc{
     margin: 0 0 0.5rem 0.5rem
 }
+
 .presentation_dishe_card{
     @include menu-card;
     &_content_h2{
@@ -59,15 +65,19 @@ body{
         font-weight: 600;
     }
 }
+
 .presentation_dishe_card:nth-child(2){
     animation: slide_card linear 1s backwards;
 }
+
 .presentation_dishe_card:nth-child(3){
     animation: slide_card linear 1s 0.3s backwards;
 }
+
 .presentation_dishe_card:nth-child(4){
     animation: slide_card linear 1s 0.6s backwards;
 }
+
 .presentation_dishe_card:nth-child(5){
     animation: slide_card linear 1s 0.9s backwards;
 }
@@ -83,42 +93,47 @@ body{
     align-items: center;
     transition: 1s; 
 }
+
 .presentation_dish_card_checkbox_icon{
         transform: rotate(360deg);
         transition: transform 1s;
         color: white;
 }
+
 .presentation_dishe_card:hover{
     padding-right: 100px;
     transition: 1s;
 }
+
 .presentation_dishe_card:hover .presentation_dish_card_checkbox{
     right: 0;
     transition:  right 1s;
 }
-.presentation_dishe_card:hover .presentation_dish_card_checkbox_icon{
 
+.presentation_dishe_card:hover .presentation_dish_card_checkbox_icon{
     transform: rotate(-360deg);
     transition: transform 1s;
     color: white;
 }
+
 .presentation_dishe_card:hover .presentation_dishe_card_content_h2, .presentation_dishe_card_description_text{
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
+
 .presentation_dishe_bloc{
-    margin: 1rem 0 0.6rem 1rem
-    ;
+    margin: 1rem 0 0.6rem 1rem;
 }
-hr{
-    height: 3px;
-    width: 13%;
-    max-width: 40px;
-    min-width: 30px;
-    background-color: $third-color;
-    border: none;
-    margin-top: 0.1rem;
+
+hr {
+height: 3px;
+width: 13%;
+max-width: 40px;
+min-width: 30px;
+background-color: $third-color;
+border: none;
+margin-top: 0.1rem;
 }
 
 .btn_commander{
@@ -126,11 +141,12 @@ hr{
     justify-content: center;
     padding: 0 2rem 2rem;
     background-color: #eaeaea
-
 }
+
 .btn_commander_links{
     @include btn;
 }
+
 @media screen and (min-width: 768px) and (max-width: 1023px){
     .presentation_dishe{
         width: 60%;
@@ -141,6 +157,7 @@ hr{
         margin: auto;
     }
 }
+
 @media screen and (min-width: 1000px){
     .container_menu_presentation_title{
         width: 40%;
