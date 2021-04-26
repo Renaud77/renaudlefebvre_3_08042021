@@ -5,7 +5,7 @@ body{
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
-/* partit css du Loader */
+/* partit css du Loader pour l'index et les pages Menu */
 
 .container_loader{
     max-width: 1440px;
@@ -54,6 +54,8 @@ body{
 .header_block_enseigne{
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 2.5rem;
         &_text{
         font: larger $title-font;
     }
@@ -100,10 +102,7 @@ body{
 }
 
 /* partit main */
-
-.heart-main{
-    @include heart-main
-}
+/* partit css des card fonctionnement */
 
 .fonctionnement{
     margin-bottom: 3rem;
@@ -163,11 +162,16 @@ body{
     background-color: #eaeaea;
 }
 
-.restaurants_title{    font-weight: bold;
+.restaurants_title{    
+    
+    font-weight: bold;
     font-size: 1.2rem;
     padding-left: 1rem;
     margin: 1rem 0;
 }
+
+/* partit main */
+/* partit css des card restaurant */
 
 .restaurants_container{
     margin: 0 1rem;
@@ -188,6 +192,10 @@ body{
     overflow: hidden;
     box-shadow: 0 1px 10px -3px #7e7e7e;
     position: relative;
+}
+
+.heart-main{
+    @include heart-main
 }
 
 .restaurants_card--new{
@@ -233,6 +241,8 @@ body{
     margin-bottom: 0.3rem;
 }
 
+/* partit footer*/
+
 .footer{
     background-color: #353535;
     display: flex;
@@ -267,7 +277,7 @@ body{
     margin-right: 0.6rem;
 }
 
-/* media queries pour les tablettes  */
+/* media queries index pour les tablettes  */
 
 @media screen and (min-width: 650px){
     .container{
@@ -312,9 +322,27 @@ body{
     }
 }
 
-/* media queries pour les ecrans Desktop */
+/* media queries index pour les ecrans Desktop */
 
 @media screen and (min-width: 650px) and (max-width:1024px){
+
+    .header_block_enseigne{
+        height: 5rem;
+        &_text{
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+        }
+    }
+    .header_block_text_location{
+        height: 3rem;
+        &--logo{
+            font-size: 1.3rem;
+        }
+        &--city{
+            font-size: 1.3rem;
+        }
+    }
     .fonctionnement{
         display: flex;
         flex-direction: column;
@@ -323,4 +351,23 @@ body{
         width: 60%;
         margin: auto auto 2rem auto;
     }
+}
+@media screen and (min-width: 1000px){
+    .header_block_enseigne{
+    height: 5rem;
+    &_text{
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+    }
+}
+.header_block_text_location{
+    height: 3rem;
+    &--logo{
+        font-size: 1.3rem;
+    }
+    &--city{
+        font-size: 1.3rem;
+    }
+ }
 }

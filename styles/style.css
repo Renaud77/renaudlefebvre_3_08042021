@@ -9,7 +9,7 @@ body {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
-/* partit css du Loader */
+/* partit css du Loader pour l'index et les pages Menu */
 .container_loader {
   max-width: 1440px;
   width: 100%;
@@ -56,6 +56,8 @@ body {
 .header_block_enseigne {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 2.5rem;
 }
 .header_block_enseigne_text {
   font: larger "Shrikhand", sans-serif;
@@ -112,38 +114,17 @@ body {
   width: 50%;
   max-width: 210px;
   min-width: 210px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .header_block_titre .header_block_titre--link:hover {
   transform: scale(1.1);
   box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.55);
   padding: 0 0.7rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* partit main */
-.heart-main {
-  width: 1.5rem;
-  height: 1.5rem;
-  overflow: visible;
-  fill-opacity: 0;
-  fill: #c148d18a;
-  stroke: black;
-  stroke-width: 15px;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
-  cursor: pointer;
-}
-.heart-main:hover {
-  overflow: visible;
-  fill-opacity: 1;
-  fill: #c148d18a;
-  stroke-opacity: 0;
-  animation: heart-animation 1s;
-  transition: stroke-opacity 1s;
-}
-
+/* partit css des card fonctionnement */
 .fonctionnement {
   margin-bottom: 3rem;
 }
@@ -210,6 +191,8 @@ body {
   margin: 1rem 0;
 }
 
+/* partit main */
+/* partit css des card restaurant */
 .restaurants_container {
   margin: 0 1rem;
 }
@@ -229,6 +212,28 @@ body {
   overflow: hidden;
   box-shadow: 0 1px 10px -3px #7e7e7e;
   position: relative;
+}
+
+.heart-main {
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: visible;
+  fill-opacity: 0;
+  fill: #c148d18a;
+  stroke: black;
+  stroke-width: 15px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+.heart-main:hover {
+  overflow: visible;
+  fill-opacity: 1;
+  fill: #c148d18a;
+  stroke-opacity: 0;
+  animation: heart-animation 1s;
+  transition: stroke-opacity 1s;
 }
 
 .restaurants_card--new {
@@ -274,6 +279,7 @@ body {
   margin-bottom: 0.3rem;
 }
 
+/* partit footer*/
 .footer {
   background-color: #353535;
   display: flex;
@@ -312,7 +318,7 @@ body {
   margin-right: 0.6rem;
 }
 
-/* media queries pour les tablettes  */
+/* media queries index pour les tablettes  */
 @media screen and (min-width: 650px) {
   .container {
     max-width: 1440px;
@@ -362,8 +368,27 @@ body {
     background-color: white;
   }
 }
-/* media queries pour les ecrans Desktop */
+/* media queries index pour les ecrans Desktop */
 @media screen and (min-width: 650px) and (max-width: 1024px) {
+  .header_block_enseigne {
+    height: 5rem;
+  }
+  .header_block_enseigne_text {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  .header_block_text_location {
+    height: 3rem;
+  }
+  .header_block_text_location--logo {
+    font-size: 1.3rem;
+  }
+  .header_block_text_location--city {
+    font-size: 1.3rem;
+  }
+
   .fonctionnement {
     display: flex;
     flex-direction: column;
@@ -374,10 +399,31 @@ body {
     margin: auto auto 2rem auto;
   }
 }
+@media screen and (min-width: 1000px) {
+  .header_block_enseigne {
+    height: 5rem;
+  }
+  .header_block_enseigne_text {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  .header_block_text_location {
+    height: 3rem;
+  }
+  .header_block_text_location--logo {
+    font-size: 1.3rem;
+  }
+  .header_block_text_location--city {
+    font-size: 1.3rem;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
 }
 
+/* header pour les pages */
 .header_menu {
   display: flex;
   align-items: center;
@@ -387,6 +433,7 @@ body {
 .header_menu_link {
   width: 10%;
   text-align: center;
+  color: black;
 }
 .header_menu_block_text {
   width: 90%;
@@ -396,18 +443,20 @@ body {
   font-size: 2rem;
 }
 
+/* Css de la partit main */
+.container_menu {
+  background-color: #eaeaea;
+}
+
 .menu_img {
   height: 270px;
   width: 100%;
   object-fit: cover;
 }
 
-.container_menu {
-  background-color: #eaeaea;
-}
-
 .container_menu_presentation {
   top: -2rem;
+  position: relative;
   background-color: #eaeaea;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -420,10 +469,22 @@ body {
   font-size: 1.5rem;
 }
 
+/* Css de la partit main */
 .presentation_dishe_bloc {
-  margin: 0 0 0.5rem 0.5rem;
+  margin: 1rem 0 0.6rem 1rem;
 }
 
+hr {
+  height: 3px;
+  width: 13%;
+  max-width: 40px;
+  min-width: 30px;
+  background-color: #99e2d0;
+  border: none;
+  margin-top: 0.1rem;
+}
+
+/* Css de la card menu a retrouver dans le fichiers _mixins */
 .presentation_dishe_card {
   position: relative;
   width: 95%;
@@ -457,6 +518,7 @@ body {
   font-weight: 600;
 }
 
+/* animation qui donne l'impression de defillement lors de l'apparition des cartes  */
 .presentation_dishe_card:nth-child(2) {
   animation: slide_card linear 1s backwards;
 }
@@ -473,6 +535,7 @@ body {
   animation: slide_card linear 1s 0.9s backwards;
 }
 
+/* Css pour le slide de la checkbox  */
 .presentation_dish_card_checkbox {
   background-color: #99e2d0;
   position: absolute;
@@ -513,20 +576,7 @@ body {
   white-space: nowrap;
 }
 
-.presentation_dishe_bloc {
-  margin: 1rem 0 0.6rem 1rem;
-}
-
-hr {
-  height: 3px;
-  width: 13%;
-  max-width: 40px;
-  min-width: 30px;
-  background-color: #99e2d0;
-  border: none;
-  margin-top: 0.1rem;
-}
-
+/* Css du bouton dans le fichier _mixins */
 .btn_commander {
   display: flex;
   justify-content: center;
@@ -549,15 +599,17 @@ hr {
   width: 50%;
   max-width: 210px;
   min-width: 210px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 .btn_commander_links:hover {
   transform: scale(1.1);
   box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.55);
   padding: 0 0.7rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
+/* media pour la partit tablette de pages menu */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .presentation_dishe {
     width: 60%;
@@ -569,6 +621,7 @@ hr {
     margin: auto;
   }
 }
+/* media pour la partit Desktop de pages menu */
 @media screen and (min-width: 1000px) {
   .container_menu_presentation_title {
     width: 40%;

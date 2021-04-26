@@ -2,6 +2,8 @@ body{
     font-family: $text-font;
 }
 
+/* header pour les pages */
+
 .header_menu{
     display: flex;
     align-items: center;
@@ -10,6 +12,7 @@ body{
     &_link{
         width: 10%;
         text-align: center;
+        color: black;
     }
     &_block_text{
         width: 90%;
@@ -20,18 +23,21 @@ body{
     }
 }
 
-.menu_img{
-    height: 270px;
-    width: 100%;
-    object-fit: cover;
-}
+
+/* Css de la partit main */
 
 .container_menu{
     background-color: #eaeaea;  
 }
 
+.menu_img{
+    height: 270px;
+    width: 100%;
+    object-fit: cover;
+}
 .container_menu_presentation{
     top: -2rem;
+    position: relative;
     background-color: #eaeaea;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -44,9 +50,23 @@ body{
     }
 }
 
+/* Css de la partit main */
+
 .presentation_dishe_bloc{
-    margin: 0 0 0.5rem 0.5rem
+    margin: 1rem 0 0.6rem 1rem;
 }
+
+hr {
+height: 3px;
+width: 13%;
+max-width: 40px;
+min-width: 30px;
+background-color: $third-color;
+border: none;
+margin-top: 0.1rem;
+}
+
+/* Css de la card menu a retrouver dans le fichiers _mixins */
 
 .presentation_dishe_card{
     @include menu-card;
@@ -66,6 +86,8 @@ body{
     }
 }
 
+/* animation qui donne l'impression de defillement lors de l'apparition des cartes  */
+
 .presentation_dishe_card:nth-child(2){
     animation: slide_card linear 1s backwards;
 }
@@ -82,6 +104,8 @@ body{
     animation: slide_card linear 1s 0.9s backwards;
 }
 
+/* Css pour le slide de la checkbox  */
+
 .presentation_dish_card_checkbox{
     background-color: #99e2d0;
     position: absolute;
@@ -93,7 +117,6 @@ body{
     align-items: center;
     transition: 1s; 
 }
-
 .presentation_dish_card_checkbox_icon{
         transform: rotate(360deg);
         transition: transform 1s;
@@ -122,19 +145,7 @@ body{
     white-space: nowrap;
 }
 
-.presentation_dishe_bloc{
-    margin: 1rem 0 0.6rem 1rem;
-}
-
-hr {
-height: 3px;
-width: 13%;
-max-width: 40px;
-min-width: 30px;
-background-color: $third-color;
-border: none;
-margin-top: 0.1rem;
-}
+/* Css du bouton dans le fichier _mixins */
 
 .btn_commander{
     display: flex;
@@ -145,9 +156,13 @@ margin-top: 0.1rem;
 
 .btn_commander_links{
     @include btn;
+    margin-top: 1rem;
 }
 
+/* media pour la partit tablette de pages menu */
+
 @media screen and (min-width: 768px) and (max-width: 1023px){
+
     .presentation_dishe{
         width: 60%;
         margin: auto;
@@ -158,7 +173,10 @@ margin-top: 0.1rem;
     }
 }
 
+/* media pour la partit Desktop de pages menu */
+
 @media screen and (min-width: 1000px){
+
     .container_menu_presentation_title{
         width: 40%;
         margin: auto;
