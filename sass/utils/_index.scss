@@ -19,7 +19,6 @@ body{
     opacity: 96%;
     align-items: center;
     background: linear-gradient(306deg, $primary-color, $third-color) ;
-    -webkit-animation: entrance 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
 	        animation: entrance 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
 }
 
@@ -30,7 +29,6 @@ body{
     justify-content: center;
     border: transparent;
     font-size: 3rem;
-	-webkit-animation: loader 300ms cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: loader 300ms cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
